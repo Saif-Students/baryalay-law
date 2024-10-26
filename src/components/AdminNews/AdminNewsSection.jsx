@@ -12,7 +12,7 @@ const client = new Client()
 const databases = new Databases(client);
 const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID; // Replace with your database ID
 const COLLECTION_ID = import.meta.env.VITE_APPWRITE_NEWS_COLLECTION_ID; // Replace with your collection ID
-console.log(DATABASE_ID, COLLECTION_ID)
+console.log('VITE_APPWRITE_NEWS_COLLECTION_ID:', import.meta.env.VITE_APPWRITE_NEWS_COLLECTION_ID);
 
 function AdminNewsSection() {
   const [title, setTitle] = useState("");
