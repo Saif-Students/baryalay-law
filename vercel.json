@@ -1,8 +1,6 @@
 {
     "rewrites": [
-      { "source": "/admin/news", "destination": "/" },
-      { "source": "/admin/{*}", "destination": "/" }, 
-      { "source": "/{any*}", "destination": "/" }
+      { "source": "/(.*)", "destination": "/" }
     ]
   }
   
